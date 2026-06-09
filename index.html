@@ -109,8 +109,8 @@
                 video.srcObject = stream;
                 await video.play();
 
-                statusDiv.innerText = "⚡ 그래픽 가속 장치 최적화 중...";
-                session = await ort.InferenceSession.create('yolov8n.onnx', { executionProviders: ['webgl', 'wasm'] });
+                statusDiv.innerText = "⚡ 그래픽 가속 장치 최적화 중.60965..";
+                session = await ort.InferenceSession.create('best.onnx', { executionProviders: ['webgl', 'wasm'] });
 
                 statusDiv.innerText = "🎯 탐지 가동 중! 사물을 비춰보세요.";
                 statusDiv.style.color = "#38bdf8";
